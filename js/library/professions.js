@@ -52,13 +52,13 @@ RPG.Professions.Mage.prototype.setup = function(being) {
 	being.adjustFeat(RPG.FEAT_MAX_MANA, 5);
 	being.adjustFeat(RPG.FEAT_MAX_HP, -3);
 
-	being.addSpell(RPG.Spells.Heal);
-//	being.addSpell(RPG.Spells.MagicBolt);
+//	being.addSpell(RPG.Spells.Heal);
+	being.addSpell(RPG.Spells.MagicBolt);
 //	being.addSpell(RPG.Spells.MagicExplosion);
 //	being.addSpell(RPG.Spells.Fireball);
 
-	var scroll = new RPG.Items.Scroll(RPG.Spells.MagicBolt);
-	being.addItem(scroll);
+//	var scroll = new RPG.Items.Scroll(RPG.Spells.MagicBolt);
+//	being.addItem(scroll);
 }
 
 /**
@@ -70,14 +70,14 @@ RPG.Professions.Assassin.visual = { desc:"assassin", image:"assassin" };
 RPG.Professions.Assassin.prototype.setup = function(being) {
 	this.parent(being);
 
-	being.adjustFeat(RPG.FEAT_MAX_MANA, 5);
+	being.adjustFeat(RPG.FEAT_SIGHT_RANGE, 6);
 	being.adjustFeat(RPG.FEAT_MAX_HP, -3);
 
-	being.addSpell(RPG.Spells.Heal);
+//	being.addSpell(RPG.Spells.Heal);
 //	being.addSpell(RPG.Spells.MagicBolt);
 //	being.addSpell(RPG.Spells.MagicExplosion);
 //	being.addSpell(RPG.Spells.Fireball);
 
-	var scroll = new RPG.Items.Scroll(RPG.Spells.MagicBolt);
-	being.addItem(scroll);
+//	var scroll = new RPG.Items.Scroll(RPG.Spells.MagicBolt);
+//	being.addItem(scroll);
 }
